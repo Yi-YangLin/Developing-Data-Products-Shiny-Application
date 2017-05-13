@@ -10,14 +10,27 @@ output:
 
 ### Create the interactive plot to examine the relationship between Girth, Height and Volume by using the default R dataset 'trees'.
 
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "README_figs/README-"
+)
+```
+
 
 ```{r, echo=FALSE}
-library(plotly)
 library(ggplot2)
+library(Hmisc)
+library(devtools)
+#install_github("ropensci/plotly")
+library(plotly)
 
-plot_ly(trees, x = ~Height, y = ~Volume, color = ~Girth) %>%
+
+p<-plot_ly(trees, x = ~Height, y = ~Volume, color = ~Girth) %>%
     layout(title = "Girth, Height and Volume for Black Cherry Trees",
            xaxis = list(title = "Height", ticksuffix = "ft"),
            yaxis = list(title = "Volume"))
+
+p
+
 
 ```
