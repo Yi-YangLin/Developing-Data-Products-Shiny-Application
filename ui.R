@@ -34,8 +34,7 @@ shinyUI(
                  tabsetPanel(
                    # Data 
                    tabPanel(p(icon("table"), "Dataset"),
-                            dataTableOutput(outputId="dTable"),
-                            downloadButton('downloadData', 'Download')
+                            dataTableOutput(outputId="dTable")
                    ), # end of "Dataset" tab panel
                    tabPanel(p(icon("line-chart"), "Visualize the Data"),
                             h4('Player Earning by Year', align = "center"),

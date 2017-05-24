@@ -91,12 +91,12 @@ shinyServer(
     } 
     )
 
-    output$downloadData <- downloadHandler(
-        filename = 'data.csv',
-        content = function(file) {
-            write.csv(dataTable(), file)#, row.names=FALSE)
-        }
-    )
+    #output$downloadData <- downloadHandler(
+    #    filename = 'data.csv',
+    #    content = function(file) {
+    #        write.csv(dataTable(), file)#, row.names=FALSE)
+    #    }
+    #)
     
     output$countryByYear <- renderChart({
         plotcountryCountByYear(dataTableBycountryByYear())

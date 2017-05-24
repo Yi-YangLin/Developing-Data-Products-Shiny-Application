@@ -4,6 +4,8 @@ This is a Shiny App for top 100 highest earning e-sports player in last 4 years.
 
 The data set is from [esportsearnings.com](https://www.esportsearnings.com/).
 
+You can also check the following link:
+https://github.com/Yi-YangLin/Developing-Data-Products-Shiny-Application
 
 **Date updated:**: 05/20/2017
 
